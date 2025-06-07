@@ -85,6 +85,8 @@
                 <input
                   type="checkbox"
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                  name="includeUpperCase"
+                  onchange="handleSelectedCharsetsChange(event)"
                 />
                 <span class="ml-3 text-sm text-gray-700">Uppercase Letters (A-Z)</span>
               </label>
@@ -93,6 +95,8 @@
                 <input
                   type="checkbox"
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                  name="includeLowerCase"
+                  onchange="handleSelectedCharsetsChange(event)"
                 />
                 <span class="ml-3 text-sm text-gray-700">Lowercase Letters (a-z)</span>
               </label>
@@ -100,6 +104,8 @@
               <label class="flex items-center">
                 <input
                   type="checkbox"
+                  name="includeNumbers"
+                  onchange="handleSelectedCharsetsChange(event)"
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
                 />
                 <span class="ml-3 text-sm text-gray-700">Numbers (0-9)</span>
@@ -108,6 +114,8 @@
               <label class="flex items-center">
                 <input
                   type="checkbox"
+                  name="includeSymbols"
+                  onchange="handleSelectedCharsetsChange(event)"
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
                 />
                 <span class="ml-3 text-sm text-gray-700">Symbols (!@#$%^&*)</span>
@@ -153,5 +161,6 @@
     <script>
       lucide.createIcons();
     </script>
+    <script src="main.js"></script>
 </body>
 </html>
